@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+  <link type="Image/x-icon" href="img/icon.png" rel="icon">
+  <link rel="stylesheet" href="css/rest.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header id="header">
+    <div id="particles-js">
+      <div class="container">
+        <nav class="header_nav">
+          <ul class="header_nav_menu">
+            <li class="header_nav_menu_list">
+              <a href="#resume" class="header_nav_menu_list_link">Resume</a>
+            </li>
+            <li class="header_nav_menu_list">
+              <a href="#portfolio" class="header_nav_menu_list_link">Portfolio</a>
+            </li>
+            <li class="header_nav_menu_list">
+              <a href="archive.html" class="header_nav_menu_list_link">Archive</a>
+            </li>
+            <li class="header_nav_menu_list">
+              <a href="#contacts" class="header_nav_menu_list_link">Contacts</a>
+            </li>
+          </ul>
+          <div class="burger_menu">
+            <div class="burger_icon" id="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+        <div class="header_content_bg">
+          <h1 class="header_content_bg_title">Frontend Developer</h1>
+        </div>
+        <div class="popup_menu">
+          <div class="popup_menu_content">
+            <span class="close_popup_menu" id="close-popup-menu">&times;</span>
+            <ul class="popup_menu_list">
+              <li class="header_nav_menu_list">
+                <a href="#resume" class="header_nav_menu_list_link">Resume</a>
+              </li>
+              <li class="header_nav_menu_list">
+                <a href="#portfolio" class="header_nav_menu_list_link">Portfolio</a>
+              </li>
+              <li class="header_nav_menu_list">
+                <a href="archive.html" class="header_nav_menu_list_link">Archive</a>
+              </li>
+              <li class="header_nav_menu_list">
+                <a href="#contacts" class="header_nav_menu_list_link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container">
+      <section id="resume" class="resume">
+          <div class="scroll_secrion">
+            <h2 class="section_title">Resume</h2>
+            <hr>
+          </div>
+          <div class="resume_content">
+            <div class="resume_content_main-block">
+              <div class="resume_content_main-block_content">
+                <h3>About Me</h3>
+                <li>Birthday: 24.05.2002</li>
+                <li>Personal qualities: I have an analytical mindset, I also have diligence, there are no problems with working in a team. I am responsible, energetic, purposeful, sociable. I am also attentive to details in my work. I am a fast learner and always ready to receive new knowledge. There is an ability to accept criticism constructively. I have a habit of planning my time and I am very punctual.</li>
+                <li>Hobbies: Actively involved in sports and self-development. I am fond of fishing.</li>
+                <input class="resume_content_main-block_content_btn" type="button" value="Download Resume" onclick="downloadPdf()">
+              </div>
+              <div class="resume_content_photo-block">
+                <img src="img/photo-rez.png" alt="my photo">
+              </div>
+            </div>
+          </div>
+          <div class="tabs">
+            <div class="tabs__btn">
+              <button class="tabs__btn-item tabs__btn-item--active" data-button="content-1">Secondary education</button>
+              <button class="tabs__btn-item" data-button="content-2">Higher education</button>
+              <button class="tabs__btn-item" data-button="content-3">Freelance Freelancehunt</button>
+              <button class="tabs__btn-item" data-button="content-4">Stay Ahead Agancy</button>
+              <button class="tabs__btn-item" data-button="content-5">ООО "Стандарт Кепітал"</button>
+              </div>
+          <div class="tabs__content">
+            <div class="tabs__content-item tabs__content-item--active" id="content-1">
+              <div class="tabs__content-box">
+              <h2>Secondary education <p>𝖯𝖾𝖽𝖺𝗀𝗈𝗀𝗂𝖼𝖺𝗅 𝖫𝗒𝖼𝖾𝗎𝗆 #𝟦</p></h2>
+              <li>Certificate of secondary education, 2008-2019.</li>
+              <li>Lyceum President.</li>
+              <li>Responsible for all equipment and events in the lyceum and outside.</li>
+              </div>
+            </div>
+            <div class="tabs__content-item" id="content-2">
+              <div class="tabs__content-box">
+              <h2>Higher education <p>𝖪𝗁𝖺𝗋𝗄𝗂𝗏 𝖭𝖺𝗍𝗂𝗈𝗇𝖺𝗅 𝖴𝗇𝗂𝗏𝖾𝗋𝗌𝗂𝗍𝗒 𝗈𝖿 𝖱𝖺𝖽𝗂𝗈 𝖤𝗅𝖾𝖼𝗍𝗋𝗈𝗇𝗂𝖼𝗌</p></h2>
+              <li>Bachelor in Avionics, 2019-2023.</li>
+              <li>Average Grade: 81/100.</li>
+              <li>Excellent academic performance.</li>
+              </div>
+            </div>
+            <div class="tabs__content-item" id="content-3">
+              <div class="tabs__content-box">
+              <h2>Freelance Freelancehunt (Remotely) 2022 - 2023</h2>
+              <li>Editing existing websites.</li>
+              <li>Creating layouts based on designs.</li>
+              <li>Adaptation for various devices.</li>
+              </div>
+            </div>
+            <div class="tabs__content-item" id="content-4">
+              <div class="tabs__content-box">
+              <h2>Frontend Developer Stay Ahead Agancy (Remotely) 2020 - 2021</h2>
+              <li>Participation in website development and maintenance.</li>
+              <li>Implementation of modern UI mechanisms.</li>
+              <li>Html5, Css3, Bootstrap, Javascript, Responsive Flex, Grids.</li>
+              </div>
+            </div>
+            <div class="tabs__content-item" id="content-5">
+              <div class="tabs__content-box">
+              <h2>Junior Specialist ООО "Стандарт Кепітал" (Hybrid) 2018 - 2022</h2>
+                <li>Working with Microsoft Word and Excel.</li>
+                <li>Tender Monitoring.</li>
+                <li>Report Compilation.</li>
+                <li>Real Estate Lot Analysis.</li>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="scroll_section">
+          <h2 class="section_title">Portfolio</h2>
+          <hr>
+        </div>
+        <div class="section_portfolio_content">
+          <div class="section_portfolio_content_sort">
+            <button id="showall">Show all</button>
+            <button id="multipage">Multipage sites</button>
+            <button id="lending">Lending</button>
+            <button id="javascript">Javascript app</button>
+            <button id="react">React / Vue app</button>
+          </div>
+        </div>
+        <div class="section_portfolio_content_cards">
+          <div class="section_portfolio_content_cards_card multipage">
+            <a href="https://danilreznickyi.github.io/project-snow.github.io/" target="_blank"><img src="img/Snow.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>Snow</h4>
+							<p>Volumetric blog, there are sliders, all links are working, adaptive layout is available. Typed in courses from a layout in Photoshop.</p>
+							<a href="https://danilreznickyi.github.io/project-snow.github.io/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+          <div class="section_portfolio_content_cards_card lending">
+            <a href="https://danilreznickyi.github.io/project-stay-ahead-v1.github.io/" target="_blank"><img src="img/Stay-Ahead.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>Stay Ahead</h4>
+							<p>
+                My internship project, a landing page with custom Figma design, includes engaging sliders. It's a key part of my job application test.</p>
+							<a href="https://danilreznickyi.github.io/project-stay-ahead-v1.github.io/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+          <div class="section_portfolio_content_cards_card lending">
+            <a href="https://danilreznickyi.github.io/project-oculus.github.io/" target="_blank"><img src="img/Oculus.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>Oculus</h4>
+							<p>Beautiful one-page website with cool design and animation.</p>
+							<a href="https://danilreznickyi.github.io/project-oculus.github.io/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+          <div class="section_portfolio_content_cards_card multipage">
+            <a href="https://danilreznickyi.github.io/project-awl-shop.github.io/" target="_blank"><img src="img/ALW-Shop.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>AWL Shop</h4>
+							<p>My second project is a custom-designed website with a shopping cart for easy item tracking and pricing. It's multi-page and includes sliders for a better user experience.</p>
+							<a href="https://danilreznickyi.github.io/project-awl-shop.github.io/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+          <div class="section_portfolio_content_cards_card react">
+            <a href="https://danilreznickyi.github.io/react-villas-shop/" target="_blank"><img src="img/React-Shop.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>Villas</h4>
+							<p>The React application I developed facilitates villa selection, incorporating a functional cart, sorting options, and a responsive menu for a seamless user experience.</p>
+							<a href="https://danilreznickyi.github.io/react-villas-shop/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+          <div class="section_portfolio_content_cards_card multipage">
+            <a href="https://danilreznickyi.github.io/project-kinomonster.github.io/" target="_blank"><img src="img/KinoMonster.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>KinoMonster</h4>
+							<p>There is a portal for films and series with a rating table, contact form and adaptive layout.</p>
+							<a href="https://danilreznickyi.github.io/project-kinomonster.github.io/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+          <div class="section_portfolio_content_cards_card react">
+            <a href="https://danilreznickyi.github.io/expense-accounting/" target="_blank"><img src="img/Учет расходов.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>Expense accounting</h4>
+							<p>This React-based expense tracking app provides a user-friendly and responsive experience, facilitating easy expense management.</p>
+							<a href="https://danilreznickyi.github.io/expense-accounting/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+          <div class="section_portfolio_content_cards_card react">
+            <a href="https://danilreznickyi.github.io/project-vue-weather-app/" target="_blank"><img src="img/Vite-App.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>Weather app</h4>
+							<p>
+                The Vue.js weather forecast application I created offers accurate weather predictions with an intuitive user interface for easy navigation and information retrieval.</p>
+							<a href="https://danilreznickyi.github.io/project-vue-weather-app/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+          <div class="section_portfolio_content_cards_card javascript">
+            <a href="https://danilreznickyi.github.io/project-game-snake.github.io/" target="_blank"><img src="img/Game-Snake.png" alt=""></a>
+						<div class="section_portfolio_content_cards_card_text">
+							<h4>Game Snake</h4>
+							<p>I created a Snake game following Nick Morgan's book, ensuring a classic yet engaging experience.</p>
+							<a href="https://danilreznickyi.github.io/project-game-snake.github.io/" target="_blank">view <i class="arrow right"></i></a>
+						</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer id="footer">
+      <div class="container">
+        <section class="contacts" id="contacts">
+          <div class="scroll_section">
+            <h2 class="section_title">Contacts</h2>
+            <hr>
+          </div>
+          <div class="contacts_block">
+            <div class="contact_block_info ">
+              <h3>Info</h3>
+              <ul class="contacts_block_info_list">
+                <li>
+                    <strong class="contacts_block_info_list_title">Phone:</strong>
+                    <a class="contacts_block_info_list_link" target="_blank"class="tel" href="tel:+380954964770"> +380 95 49 64 770</a>
+                </li>
+                <li>
+                    <strong class="contacts_block_info_list_title">Email:</strong>
+                    <a class="contacts_block_info_list_link" target="_blank" href="danilrez.it@gmail.com">danilrez.it@gmail.com</a>
+                </li>
+                <li>
+                    <strong class="contacts_block_info_list_title">Telegram:</strong>
+                    <a class="contacts_block_info_list_link" target="_blank" href="https://web.telegram.org/z/">@Danil_Reznickiy_24</a>
+                </li>
+                <li>
+                    <strong class="contacts_block_info_list_title">GitHub:</strong>
+                    <a class="contacts_block_info_list_link" target="_blank" href="https://github.com/DanilReznickyi">DanilReznickyi</a>
+                </li>
+               </ul>
+              </div>
+            </div>
+        </section>
+      </div>
+  </footer>
+  <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script defer src="js/particles.js"></script>
+  <script defer src="js/bg.js"></script>
+  <script defer src="js/title-scroll.js"></script>
+  <script defer src="js/scroll-sections.js"></script>
+  <script defer src="js/tabs.js"></script>
+  <script defer src="js/sort.js"></script>
+  <script defer src="js/download.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
