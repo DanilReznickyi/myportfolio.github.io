@@ -1,0 +1,142 @@
+@media (max-width: 1200px) {
+	.container {
+    width: 1000px;
+	}
+	.tabs__content-box {
+		width: 600px;
+	}
+	.section_portfolio_content_cards {
+		grid-template-columns: auto auto;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1000px) {
+	h2 {
+		font-size: 40px;
+	}
+	.container {
+			width: 800px;
+	}
+	.tabs__content-box {
+		width: 400px;
+	}
+}
+
+@media (max-width: 800px) {
+	.header_content_bg_title {
+		font-size: 72px;
+		line-height: 70px;
+	}
+	.resume_content_main-block_content li {
+		font-size: 16px;
+	}
+	.container {
+			width: 600px;
+	}
+	.block-content {
+		margin-top: 30px;
+	}
+	.tabs__content-box {
+		width: 400px;
+	}
+	.resume_content_photo-block {
+		display: none;
+	}
+	hr {
+		margin-bottom: 30px;
+	}
+	.tabs {
+		height: 500px;
+		display: block;
+	}
+	.tabs__btn {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 10px;
+		margin: 10px auto;
+		border-bottom: 1px solid #F2D7D7;
+	}
+	.tabs__btn-item {
+		text-align: left;
+		height: 40px;
+		padding: 0px 5px;
+		width: 250px;
+	}
+	.tabs__content {
+		display: block;
+		margin-left: 20px;
+		margin-top: 20px;
+		width: 100%;
+	}
+	.block-content li {
+		font-size: 16px;
+	}
+	.section_portfolio_content_cards {
+		grid-template-columns: auto;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 400px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	h3 {
+		font-size: 26px;
+	}
+  /* .header-menu {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+		margin-bottom: 25px;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+	.mobile-menu-item{
+		padding: 10px 0;
+	}
+	.header-main-title{
+		font-size: 68px;
+	} */
+	.tabs{
+		height: 600px;
+	}
+	.tabs__content-box{
+		width: 350px;
+	}
+	.tabs__content-box span {
+		display: none;
+	}
+	.tabs__content h2{
+		margin-bottom: 20px;
+	}
+	.contact_block_info  {
+		width: 400px;
+	}
+	}
+	@media (max-width: 400px) {
+	.container {
+		width: 350px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+	font-size: 22px;
+	}
+	.tabs__content-box {
+	width: 350px;
+	}
+	.tabs__content-box p,.tabs__content-box li {
+	max-width: 90%;
+	}
+	.contact_block_info  {
+		width: 300px;
+	}
+}
