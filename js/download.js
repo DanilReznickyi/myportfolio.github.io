@@ -1,7 +1,7 @@
 function downloadPdf() {
-  const pdfUrl = 'Rezume EN.pdf';
+  const pdfUrl = 'Resume.pdf';
   const downloadLink = document.createElement('a');
   downloadLink.href = pdfUrl;
-  downloadLink.download = 'Rezume EN'; 
+  downloadLink.download = 'Resume'; 
   downloadLink.click();
 }

@@ -134,9 +134,25 @@
 	width: 350px;
 	}
 	.tabs__content-box p,.tabs__content-box li {
-	max-width: 90%;
+	width: 90%;
 	}
 	.contact_block_info  {
 		width: 300px;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 350px) {
+	.container {
+		width: 320px;
+	}
+	.tabs__content-box {
+	width: 320px;
+	}
+	.tabs__content-box p,.tabs__content-box li {
+	width: 90%;
+	}
+	.contact_block_info  {
+		width: 300px;
+		margin: 0 auto;
 	}
 }
