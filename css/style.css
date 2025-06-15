@@ -34,11 +34,12 @@
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 30px;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
   border: none;
   color: #F2D7D7;
   background-color: #98465f;
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+	display: none;
 }
 .resume_content_main-block_content_btn:hover {
   cursor: pointer;
@@ -48,7 +49,6 @@
 .tabs {
   display: grid;
   grid-template-columns: 400px 800px;
-  height: 450px;
   margin: 0;
   overflow: hidden;
   border-radius: 15px;
@@ -107,6 +107,77 @@
   text-transform: none;
   padding: 0 0 10px 0;
 }
+
+.certificates {
+  max-width: 1200px; /* или твоя ширина контейнера */
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.certificate_slider {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.slider_container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.slider_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* <-- используй contain вместо cover */
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  background-color: #1F1F1F;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.slider_image.active {
+  opacity: 1;
+}
+
+.slider_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(31,31,31,0.5);
+  color: #fff;
+  border: none;
+  font-size: 28px; /* уменьшаем, чтобы чётко встал по центру */
+  cursor: pointer;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* гарантирует центрирование стрелок */
+  transition: background-color 0.3s ease;
+}
+
+
+.slider_btn:hover {
+  background-color: rgba(152,70,95,0.8);
+}
+
+.prev_btn {
+  left: 15px;
+}
+
+.next_btn {
+  right: 15px;
+}
+
 
 /* FOOTER */
 

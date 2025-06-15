@@ -76,6 +76,14 @@
 		grid-template-columns: auto;
 		margin: 0 auto;
 	}
+	.slider_container {
+		height: 350px;
+	    }
+	    .slider_btn {
+		width: 40px;
+		height: 40px;
+		font-size: 32px;
+	    }
 }
 
 @media (max-width: 600px) {
@@ -119,6 +127,14 @@
 	.contact_block_info  {
 		width: 400px;
 	}
+	.slider_container {
+		height: 250px;
+	    }
+	    .slider_btn {
+		width: 35px;
+		height: 35px;
+		font-size: 28px;
+	    }
 	}
 	@media (max-width: 400px) {
 	.container {
